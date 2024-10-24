@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+            border: 3px solid lightsalmon;
+        }
+        tr{
+            background-color: whitesmoke;
+        }
+        tr.highlighted{
+            background-color: lightgray;
+        }
+        td{
+            border: 1px solid gray;
+            padding: 8px;
+            text-align: center; /*alinhamento horizontal: left, center, right*/
+            vertical-align: middle; /*alinhamento vertical: top, midle, bottom*/
+        }
+        td.highlighted{
+            background-color: rgba(32, 178, 171, 0.427);
+        }
+    </style>
+</head>
+<body>
+    <H1>Minha Primeira Tabela</H1>
+    <!--Hierarquia de Tabelas (simples)
+    Table
+        Table row=<tr>
+            Table header
+            Table data=<td>
+    -->
+    <table>
+        <tr> <!--Primeira linha-->
+            <td>A1</td> <!--fechamento </td> e </tr> sao opcionais-->
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="highlighted"><!--Segunda linha-->
+            <td >A2</td>
+            <td>B2</td>
+            <td>C3</td>
+        </tr>
+        <tr><!--Terceira linha-->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr><!--Quarta linha-->
+            <td>A4</td>
+            <td>B4</td>
+            <td class=highlighted>C4</td>
+        </tr>
+    </table>
+</body>
+</html>
