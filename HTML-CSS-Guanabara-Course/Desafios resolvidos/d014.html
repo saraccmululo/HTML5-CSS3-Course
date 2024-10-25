@@ -10,6 +10,7 @@
         }
         table{
             border-collapse: collapse;
+            width: 500px;
         }
         thead{
             background-color: gray;
@@ -37,14 +38,14 @@
     <table>
         <thead>
             <tr>
-                <th rowspan="2">Area</th>
-                <th rowspan="2">Disciplinas</th>
+                <th rowspan="2" scope="col">Area</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
                 <th colspan="2" scope="colgroup">Notas</th>
-                <th rowspan="2">Media</th>
+                <th rowspan="2" scope="col">Media</th>
             </tr>
             <tr>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
             </tr>
         </thead>
         <tbody>
